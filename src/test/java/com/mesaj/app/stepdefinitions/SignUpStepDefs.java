@@ -1,8 +1,7 @@
 package com.mesaj.app.stepdefinitions;
 
 import com.mesaj.app.builders.data.UserBuilder;
-import com.mesaj.app.models.User;
-import com.mesaj.app.questions.GetUserToSignUpBy;
+//import com.mesaj.app.questions.GetUserToSignUpBy;
 import com.mesaj.app.tasks.NavigateTo;
 import com.mesaj.app.tasks.UserSignUp;
 import io.cucumber.java.en.Given;
@@ -20,42 +19,53 @@ public class SignUpStepDefs {
     @Autowired
     private NavigateTo navigate;
 
-    @Given("^Pepito wants to have an account$")
-    public void pepito_wants_to_have_an_account() throws InterruptedException {
+    @Given("^Miguel quiere ingresar al backoffice$")
+    public void ingresar_al_backoffice() throws InterruptedException {
         navigate.signUpPage();
         Thread.sleep(4000);
     }
 
-    @When("^he sends required information to get the account$")
-    public void he_sends_required_information_to_get_the_account() {
+    @When("^el envia la  informacion requerida para ingresar$")
+    public void Enviar_informacion_requerida_para_ingresar() {
 
-        signUp.withInfo(
-                UserBuilder
-                        .anUser()
-                        .but()
-                        .withoutBirthDay()
-                        .withoutEmail()
-                        .build()
-        );
+
+
+            signUp.withInfo(UserBuilder
+                            .anUser()
+                            .withDefaultInfo()
+                            .build());
+        try {
+            Thread.sleep(3000);
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
+        }
+
     }
 
-    @When("^he sends required information to get the account as an (.*)$")
-    public void sends_required_information_as_an(String profile) throws Exception {
+    @Then("^el puede ingresar correctamente y ver la pantalla principal$")
+    public void ver_Pantalla_Principal() {
 
-        User userToSignUp = GetUserToSignUpBy.profile(profile);
-
-        signUp.withInfo(
-                userToSignUp
-        );
-    }
-
-    @Then("^he should be told that the account was created$")
-    public void he_should_be_told_that_the_account_was_created() {
         assertThat(true).isEqualTo(true);
+
     }
 
-    @Then("^he should be told that the account was not created$")
-    public void he_should_be_told_that_the_account_was_not_created() {
+    @Then("^el no puede ingresar al backoffice$")
+    public void el_no_puede_ingresar_al_backoffice() {
+        signUp.withInfo(UserBuilder
+                .anUser()
+                .withDefaultInfo()
+                .but()
+                .withoutUsuario()
+                .withoutContrasena()
+                .build());
+
+        try {
+            Thread.sleep(3000);
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
+        }
+
         assertThat(true).isEqualTo(false);
+
     }
 }

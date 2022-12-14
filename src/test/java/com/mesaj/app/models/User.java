@@ -1,6 +1,5 @@
 package com.mesaj.app.models;
 
-import com.mesaj.app.enums.Gender;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
@@ -12,16 +11,8 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 public class User {
 
-    private String firstName = "foo";
-    private String lastName = "bar";
-    private String email = "foo@gmail.com";
-    private Gender gender = Gender.female;
-    private String country = "Colombia";
-    private String birthDay = "";
-    private String birthMonth = "";
-    private String birthYear = "";
-    private String phone = "";
-    private String password = "";
-    private String passwordConfirmation = "";
-    private String profile = "";
+    private String usuario = "bingoFullGlobal";
+    private String contrasena = "mob_M_2017";
+
+
 }

@@ -18,42 +18,21 @@ public class SignUpPageObject extends PageBase{
         super(driver);
     }
 
-    @FindBy(xpath = "//input[@ng-model='FirstName']")
-    private WebElement firstNameTextbox;
+    @FindBy(xpath = "//body/div[@id='wrapper-mobiApp']/div[1]/div[1]/div[2]/div[1]/div[1]/input[1]")
+    private WebElement usuarioTextbox;
 
-    @FindBy(xpath = "//input[@ng-model='LastName']")
-    private WebElement lastName;
+    @FindBy(xpath = "//body/div[@id='wrapper-mobiApp']/div[1]/div[1]/div[2]/div[2]/div[1]/input[1]")
+    private WebElement contrasena;
 
-    @FindBy(xpath = "//input[@type='email']")
-    private WebElement emailAddress;
-
-    @FindBy(xpath = "//input[@type='tel']")
-    private WebElement phone;
-
-    @FindBy(xpath = "//input[@value='Male']")
-    private WebElement genderMale;
-
-    @FindBy(xpath = "//input[@value='FeMale']")
-    private WebElement genderFemale;
-
-    @FindBy(id = "countries")
-    private WebElement country;
-
-    @FindBy(id = "yearbox")
-    private WebElement dateOfBirthYear;
-
-    @FindBy(xpath = "//select[@ng-model='monthbox']")
-    private WebElement dateOfBirthMonth;
-
-    @FindBy(id = "daybox")
-    private WebElement dateOfBirthDay;
-
-    @FindBy(id = "firstpassword")
-    private WebElement password;
-
-    @FindBy(id = "secondpassword")
-    private WebElement confirmPassword;
-
-    @FindBy(id = "submitbtn")
+    @FindBy(xpath= "//body/div[@id='wrapper-mobiApp']/div[1]/div[1]/div[3]/button[1]")
     private WebElement submit;
+
+    @FindBy (xpath = "//body/div[@id='wrapper-mobiApp']/div[2]/div[2]/div[1]/div[3]")
+    private WebElement pantallaPrincipal;
+
+    @FindBy (xpath = "//body/div[@id='wrapper-mobiApp']/div[1]/div[1]/div[1]/div[5]/div[1]/label[1]/span[1]")
+    private WebElement Rooms;
+
+    @FindBy (xpath = "//body/div[@id='wrapper-mobiApp']/div[1]/div[1]/div[1]/div[5]/div[2]/a[1]/div[1]/label[1]/span[1]")
+    private WebElement ListRooms;
 }

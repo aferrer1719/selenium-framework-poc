@@ -1,6 +1,6 @@
 package com.mesaj.app.pageobjects;
 
-import com.mesaj.app.enums.Gender;
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
@@ -26,64 +26,30 @@ public class SignUpServices {
         this.driver.get(url);
     }
 
-    public void writeFirstName(String firstName) {
-        this.wait.until(ExpectedConditions.visibilityOf(this.signUpPageObject.getFirstNameTextbox()));
-        this.signUpPageObject.getFirstNameTextbox().sendKeys(firstName);
+    public void writeUsuario(String usuario) {
+        this.wait.until(ExpectedConditions.visibilityOf(this.signUpPageObject.getUsuarioTextbox()));
+        this.signUpPageObject.getUsuarioTextbox().sendKeys(usuario);
     }
 
-    public void writeLastName(String lastName) {
-        this.signUpPageObject.getLastName().sendKeys(lastName);
+    public void writeContrasena(String contrasena) {
+        this.signUpPageObject.getContrasena().sendKeys(contrasena);
     }
 
-    public void writeEmail(String email) {
-        this.signUpPageObject.getEmailAddress().sendKeys(email);
-    }
-
-    public void writePhone(String phone) {
-        this.signUpPageObject.getPhone().sendKeys(phone);
-    }
-
-    private void selectMale() {
-        this.signUpPageObject.getGenderMale().click();
-    }
-
-    private void selectFemale() {
-        this.signUpPageObject.getGenderFemale().click();
-    }
-
-    public void selectCountry(String country) {
-        new Select(this.signUpPageObject.getCountry()).selectByValue(country);
-    }
-
-    public void selectBirthDay(String day) {
-        new Select(this.signUpPageObject.getDateOfBirthDay()).selectByValue(day);
-    }
-
-    public void selectBirthMonth(String month) {
-        new Select(this.signUpPageObject.getDateOfBirthMonth()).selectByValue(month);
-    }
-
-    public void selectBirthYear(String year) {
-        new Select(this.signUpPageObject.getDateOfBirthYear()).selectByValue(year);
-    }
-
-    public void writePassword(String password) {
-        this.signUpPageObject.getPassword().sendKeys(password);
-    }
-
-    public void writeConfirmPassword(String password) {
-        this.signUpPageObject.getConfirmPassword().sendKeys(password);
-    }
-
-    public void clickOnSubmit() {
+     public void clickOnSubmit() {
         this.signUpPageObject.getSubmit().click();
     }
 
-    public void selectGender(Gender gender) {
-        if (gender == Gender.female) {
-            selectFemale();
-        } else {
-            selectMale();
-        }
-    }
+     public void pantallaPrincipal(){
+        this.wait.until(ExpectedConditions.visibilityOf(this.signUpPageObject.getPantallaPrincipal()));
+        this.signUpPageObject.getPantallaPrincipal().isDisplayed();
+     }
+
+     public void seleccionarRooms(){
+        this.signUpPageObject.getRooms().click();
+     }
+
+     public void seleccionarListRooms(){
+        this.signUpPageObject.getListRooms().click();
+
+     }
 }

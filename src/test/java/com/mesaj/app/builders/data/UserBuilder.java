@@ -1,8 +1,6 @@
 package com.mesaj.app.builders.data;
 
-import com.mesaj.app.enums.Gender;
 import com.mesaj.app.models.User;
-import com.mesaj.app.util.RandomNumberGenerator;
 
 public class UserBuilder {
 
@@ -22,31 +20,28 @@ public class UserBuilder {
 
     public UserBuilder withDefaultInfo() {
         this.user = User.builder()
-                .firstName("Pepito")
-                .lastName("Perez")
-                .email("Perez@gmail.com")
-                .gender(Gender.male)
-                .country("Colombia")
-                .birthDay("10")
-                .birthMonth("February")
-                .birthYear("1989")
-                .phone(RandomNumberGenerator.get())
-                .password("A_x?a1989")
-                .passwordConfirmation("A_x?a1989").build();
+                .usuario("bingoFullGlobal")
+                .contrasena("mob_M_2017").build();
+
         return this;
     }
 
-    public UserBuilder withoutEmail() {
-        user.setEmail("");
+    public UserBuilder withoutUsuario() {
+        user.setUsuario("");
         return this;
     }
 
-    public UserBuilder withoutBirthDay() {
-        user.setBirthDay("");
+    public UserBuilder withoutContrasena() {
+        user.setContrasena("");
         return this;
     }
 
     public User build() {
+
         return this.user;
     }
+
+
+
 }
+

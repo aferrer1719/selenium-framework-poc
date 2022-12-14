@@ -3,11 +3,11 @@
     "line": 1,
     "elements": [
       {
-        "start_timestamp": "2021-04-04T09:42:44.382Z",
+        "start_timestamp": "2022-12-14T03:37:40.207Z",
         "before": [
           {
             "result": {
-              "duration": 12000000,
+              "duration": 8000000,
               "status": "passed"
             },
             "match": {
@@ -15,26 +15,26 @@
             }
           }
         ],
-        "line": 4,
-        "name": "client sign up successfully",
+        "line": 14,
+        "name": "client ingresa satisfactoriamente al backoffice",
         "description": "",
-        "id": "client-sign-up;client-sign-up-successfully",
+        "id": "client-sign-up;client-ingresa-satisfactoriamente-al-backoffice",
         "after": [
-          {
-            "result": {
-              "duration": 1000000,
-              "status": "passed"
-            },
-            "match": {
-              "location": "com.mesaj.app.util.reporting.PhotographerHook.takeScreenshotAfterFailingScenario(io.cucumber.java.Scenario)"
-            }
-          },
           {
             "result": {
               "status": "passed"
             },
             "match": {
               "location": "com.mesaj.app.util.reporting.PhotographerHook.takeScreenshotAfterScenario(io.cucumber.java.Scenario)"
+            }
+          },
+          {
+            "result": {
+              "duration": 2000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.mesaj.app.util.reporting.PhotographerHook.takeScreenshotAfterFailingScenario(io.cucumber.java.Scenario)"
             }
           }
         ],
@@ -43,18 +43,18 @@
         "steps": [
           {
             "result": {
-              "duration": 16378000000,
+              "duration": 18659000000,
               "status": "passed"
             },
-            "line": 5,
-            "name": "Pepito wants to have an account",
+            "line": 15,
+            "name": "Miguel quiere ingresar al backoffice",
             "match": {
-              "location": "com.mesaj.app.stepdefinitions.SignUpStepDefs.pepito_wants_to_have_an_account()"
+              "location": "com.mesaj.app.stepdefinitions.SignUpStepDefs.ingresar_al_backoffice()"
             },
             "after": [
               {
                 "result": {
-                  "duration": 5000000,
+                  "duration": 6000000,
                   "status": "passed"
                 },
                 "match": {
@@ -63,11 +63,144 @@
               }
             ],
             "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 8011000000,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "el envia la  informacion requerida para ingresar",
+            "match": {
+              "location": "com.mesaj.app.stepdefinitions.SignUpStepDefs.Enviar_informacion_requerida_para_ingresar()"
+            },
+            "after": [
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "com.mesaj.app.util.reporting.PhotographerHook.takeScreenshotAfterEveryStep(io.cucumber.java.Scenario)"
+                }
+              }
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 164000000,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "el puede ingresar correctamente y ver la pantalla principal",
+            "match": {
+              "location": "com.mesaj.app.stepdefinitions.SignUpStepDefs.ver_Pantalla_Principal()"
+            },
+            "after": [
+              {
+                "result": {
+                  "duration": 1000000,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "com.mesaj.app.util.reporting.PhotographerHook.takeScreenshotAfterEveryStep(io.cucumber.java.Scenario)"
+                }
+              }
+            ],
+            "keyword": "Then "
           }
         ],
         "tags": [
           {
             "name": "@run"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-12-14T03:38:08.027Z",
+        "before": [
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.mesaj.app.CucumberSpringContextConfiguration.setup()"
+            }
+          }
+        ],
+        "line": 19,
+        "name": "client sign up failed 2",
+        "description": "",
+        "id": "client-sign-up;client-sign-up-failed-2",
+        "after": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.mesaj.app.util.reporting.PhotographerHook.takeScreenshotAfterScenario(io.cucumber.java.Scenario)"
+            }
+          },
+          {
+            "result": {
+              "duration": 4000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.mesaj.app.util.reporting.PhotographerHook.takeScreenshotAfterFailingScenario(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 11363000000,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "Miguel quiere ingresar al backoffice",
+            "match": {
+              "location": "com.mesaj.app.stepdefinitions.SignUpStepDefs.ingresar_al_backoffice()"
+            },
+            "after": [
+              {
+                "result": {
+                  "duration": 2000000,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "com.mesaj.app.util.reporting.PhotographerHook.takeScreenshotAfterEveryStep(io.cucumber.java.Scenario)"
+                }
+              }
+            ],
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "error_message": "org.openqa.selenium.NoSuchWindowException: no such window: target window already closed\nfrom unknown error: web view not found\n  (Session info: chrome\u003d108.0.5359.95)\nBuild info: version: \u00274.0.0-alpha-4\u0027, revision: \u0027c2d955b49e\u0027\nSystem info: host: \u0027ASUS-M509D\u0027, ip: \u0027192.168.21.22\u0027, os.name: \u0027Windows 11\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u00271.8.0_351\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.95, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\\Users\\RYZEN5~1\\AppData\\L...}, goog:chromeOptions: {debuggerAddress: localhost:59424}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: 12b87c1db42f07f30abfe199949e14a1\n*** Element info: {Using\u003dxpath, value\u003d//body/div[@id\u003d\u0027wrapper-mobiApp\u0027]/div[2]/div[2]/div[1]/div[3]}\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\r\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:196)\r\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:129)\r\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:161)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:582)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:333)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:451)\r\n\tat org.openqa.selenium.By$ByXPath.findElement(By.java:394)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:325)\r\n\tat org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)\r\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)\r\n\tat com.sun.proxy.$Proxy70.toString(Unknown Source)\r\n\tat java.lang.String.valueOf(String.java:2994)\r\n\tat java.lang.StringBuilder.append(StringBuilder.java:137)\r\n\tat org.openqa.selenium.support.ui.ExpectedConditions$10.toString(ExpectedConditions.java:305)\r\n\tat java.lang.String.valueOf(String.java:2994)\r\n\tat java.lang.StringBuilder.append(StringBuilder.java:137)\r\n\tat org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:232)\r\n\tat com.mesaj.app.pageobjects.SignUpServices.pantallaPrincipal(SignUpServices.java:43)\r\n\tat com.mesaj.app.tasks.UserSignUp.withInfo(UserSignUp.java:21)\r\n\tat com.mesaj.app.stepdefinitions.SignUpStepDefs.el_no_puede_ingresar_al_backoffice(SignUpStepDefs.java:54)\r\n\tat ✽.el no puede ingresar al backoffice(file:///C:/Users/RYZEN%205/IdeaProjects/selenium-framework-poc/src/test/resources/features/signup.feature:21)\r\n",
+              "duration": 60539000000,
+              "status": "failed"
+            },
+            "line": 21,
+            "name": "el no puede ingresar al backoffice",
+            "match": {
+              "location": "com.mesaj.app.stepdefinitions.SignUpStepDefs.el_no_puede_ingresar_al_backoffice()"
+            },
+            "after": [
+              {
+                "result": {
+                  "duration": 1000000,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "com.mesaj.app.util.reporting.PhotographerHook.takeScreenshotAfterEveryStep(io.cucumber.java.Scenario)"
+                }
+              }
+            ],
+            "keyword": "Then "
           }
         ]
       }
