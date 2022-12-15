@@ -74,7 +74,7 @@ $(document).ready(function() {
   <tbody>
     <tr class="info">
       <td>No Name (add projectName to cucumber-reporting.properties)</td>
-      <td>13 Dec 2022, 22:39</td>
+      <td>14 Dec 2022, 22:52</td>
     </tr>
   </tbody>
 </table>
@@ -129,16 +129,16 @@ $(document).ready(function() {
           <td class="tagname">Client sign up</td>
           <td      class="passed"    >4</td>
           <td      class="failed"    >1</td>
+          <td     class="skipped"   >1</td>
           <td >0</td>
           <td >0</td>
-          <td >0</td>
-          <td class="total">5</td>
+          <td class="total">6</td>
 
           <td  class="passed"    >1</td>
           <td  class="failed"    >1</td>
           <td class="total">2</td>
 
-          <td class="duration" data-value="98736000000">1:38.736</td>
+          <td class="duration" data-value="99396000000">1:39.396</td>
           <td class="failed">Failed</td>
         </tr>
         </tbody>
@@ -191,7 +191,7 @@ $(document).ready(function() {
 </div>
 
 
-  <span class="lead-duration duration">26.834</span>
+  <span class="lead-duration duration">27.144</span>
 
 
   <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-1">
@@ -229,7 +229,7 @@ $(document).ready(function() {
             <span class="keyword indention">Before</span>
               <span class="location name">com.mesaj.app.CucumberSpringContextConfiguration.setup()</span>
 
-  <span class="lead-duration duration">0.008</span>
+  <span class="lead-duration duration">0.007</span>
 
           </div>
 
@@ -266,7 +266,7 @@ $(document).ready(function() {
   <span class="keyword indention">Given</span>
   <span class="name">Miguel quiere ingresar al backoffice</span>
 
-  <span class="lead-duration duration">18.659</span>
+  <span class="lead-duration duration">20.219</span>
 
 </div>
 
@@ -303,7 +303,7 @@ $(document).ready(function() {
             <span class="keyword indention">After</span>
               <span class="location name">com.mesaj.app.util.reporting.PhotographerHook.takeScreenshotAfterEveryStep(io.cucumber.java.Scenario)</span>
 
-  <span class="lead-duration duration">0.006</span>
+  <span class="lead-duration duration">0.003</span>
 
           </div>
 
@@ -325,7 +325,7 @@ $(document).ready(function() {
   <span class="keyword indention">When</span>
   <span class="name">el envia la  informacion requerida para ingresar</span>
 
-  <span class="lead-duration duration">8.011</span>
+  <span class="lead-duration duration">6.811</span>
 
 </div>
 
@@ -384,7 +384,7 @@ $(document).ready(function() {
   <span class="keyword indention">Then</span>
   <span class="name">el puede ingresar correctamente y ver la pantalla principal</span>
 
-  <span class="lead-duration duration">0.164</span>
+  <span class="lead-duration duration">0.114</span>
 
 </div>
 
@@ -421,7 +421,7 @@ $(document).ready(function() {
             <span class="keyword indention">After</span>
               <span class="location name">com.mesaj.app.util.reporting.PhotographerHook.takeScreenshotAfterEveryStep(io.cucumber.java.Scenario)</span>
 
-  <span class="lead-duration duration">0.001</span>
+  <span class="lead-duration duration">0.000</span>
 
           </div>
 
@@ -477,7 +477,7 @@ $(document).ready(function() {
             <span class="keyword indention">After</span>
               <span class="location name">com.mesaj.app.util.reporting.PhotographerHook.takeScreenshotAfterFailingScenario(io.cucumber.java.Scenario)</span>
 
-  <span class="lead-duration duration">0.002</span>
+  <span class="lead-duration duration">0.001</span>
 
           </div>
 
@@ -502,7 +502,7 @@ $(document).ready(function() {
 </div>
 
 
-  <span class="lead-duration duration">1:11.902</span>
+  <span class="lead-duration duration">1:12.252</span>
 
 
   <span data-toggle="collapse" class=" collapsable-control" data-target="#element-8">
@@ -577,7 +577,7 @@ $(document).ready(function() {
   <span class="keyword indention">Given</span>
   <span class="name">Miguel quiere ingresar al backoffice</span>
 
-  <span class="lead-duration duration">11.363</span>
+  <span class="lead-duration duration">11.705</span>
 
 </div>
 
@@ -614,7 +614,7 @@ $(document).ready(function() {
             <span class="keyword indention">After</span>
               <span class="location name">com.mesaj.app.util.reporting.PhotographerHook.takeScreenshotAfterEveryStep(io.cucumber.java.Scenario)</span>
 
-  <span class="lead-duration duration">0.002</span>
+  <span class="lead-duration duration">0.003</span>
 
           </div>
 
@@ -632,11 +632,11 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-Then failed">
-  <span class="keyword indention">Then</span>
-  <span class="name">el no puede ingresar al backoffice</span>
+<div class="brief step-name-When failed">
+  <span class="keyword indention">When</span>
+  <span class="name">el no ingresa la informacion requerida para autenticarse</span>
 
-  <span class="lead-duration duration">1:0.539</span>
+  <span class="lead-duration duration">1:0.547</span>
 
 </div>
 
@@ -648,20 +648,26 @@ $(document).ready(function() {
   <div class="inner-level">
     <div class="message indention">
       <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-12">
-          <a>org.openqa.selenium.NoSuchWindowException:</a>
+          <a>org.openqa.selenium.TimeoutException:</a>
       </div>
       <div id="msg-12" class="collapse collapsable-details  in ">
-        <pre>org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
-from unknown error: web view not found
+        <pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.xpath: //body/div[@id='wrapper-mobiApp']/div[2]/div[2]/div[1]/div[3]' (tried for 60 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:138)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:234)
+	at com.mesaj.app.pageobjects.SignUpServices.pantallaPrincipal(SignUpServices.java:43)
+	at com.mesaj.app.tasks.UserSignUp.withInfo(UserSignUp.java:21)
+	at com.mesaj.app.stepdefinitions.SignUpStepDefs.ingresar_informacion(SignUpStepDefs.java:55)
+	at &#10045;.el no ingresa la informacion requerida para autenticarse(file:///C:/Users/RYZEN%205/IdeaProjects/selenium-framework-poc/src/test/resources/features/signup.feature:21)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//body/div[@id='wrapper-mobiApp']/div[2]/div[2]/div[1]/div[3]&quot;}
   (Session info: chrome=108.0.5359.95)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
 Build info: version: '4.0.0-alpha-4', revision: 'c2d955b49e'
-System info: host: 'ASUS-M509D', ip: '192.168.21.22', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_351'
+System info: host: 'ASUS-M509D', ip: '192.168.21.26', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_351'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.95, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\Users\RYZEN5~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:59424}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 12b87c1db42f07f30abfe199949e14a1
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.95, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\Users\RYZEN5~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:64844}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 8b651b6977c6d5a56f76ceabe3bf767f
 *** Element info: {Using=xpath, value=//body/div[@id='wrapper-mobiApp']/div[2]/div[2]/div[1]/div[3]}
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.GeneratedConstructorAccessor21.newInstance(Unknown Source)
 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
 	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:196)
@@ -676,17 +682,52 @@ Session ID: 12b87c1db42f07f30abfe199949e14a1
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:325)
 	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
-	at com.sun.proxy.$Proxy70.toString(Unknown Source)
-	at java.lang.String.valueOf(String.java:2994)
-	at java.lang.StringBuilder.append(StringBuilder.java:137)
-	at org.openqa.selenium.support.ui.ExpectedConditions$10.toString(ExpectedConditions.java:305)
-	at java.lang.String.valueOf(String.java:2994)
-	at java.lang.StringBuilder.append(StringBuilder.java:137)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:232)
+	at com.sun.proxy.$Proxy70.isDisplayed(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:314)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:43)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:300)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:297)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:211)
 	at com.mesaj.app.pageobjects.SignUpServices.pantallaPrincipal(SignUpServices.java:43)
 	at com.mesaj.app.tasks.UserSignUp.withInfo(UserSignUp.java:21)
-	at com.mesaj.app.stepdefinitions.SignUpStepDefs.el_no_puede_ingresar_al_backoffice(SignUpStepDefs.java:54)
-	at &#10045;.el no puede ingresar al backoffice(file:///C:/Users/RYZEN%205/IdeaProjects/selenium-framework-poc/src/test/resources/features/signup.feature:21)
+	at com.mesaj.app.stepdefinitions.SignUpStepDefs.ingresar_informacion(SignUpStepDefs.java:55)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at io.cucumber.java.Invoker.invoke(Invoker.java:27)
+	at io.cucumber.java.JavaStepDefinition.execute(JavaStepDefinition.java:27)
+	at io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:63)
+	at io.cucumber.core.runner.TestStep.executeStep(TestStep.java:64)
+	at io.cucumber.core.runner.TestStep.run(TestStep.java:49)
+	at io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:46)
+	at io.cucumber.core.runner.TestCase.run(TestCase.java:51)
+	at io.cucumber.core.runner.Runner.runPickle(Runner.java:67)
+	at io.cucumber.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:149)
+	at io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:83)
+	at io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:24)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at io.cucumber.junit.Cucumber.runChild(Cucumber.java:185)
+	at io.cucumber.junit.Cucumber.runChild(Cucumber.java:83)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at io.cucumber.junit.Cucumber$RunCucumber.evaluate(Cucumber.java:219)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+	at com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:69)
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater$1.execute(IdeaTestRunner.java:38)
+	at com.intellij.rt.execution.junit.TestsRepeater.repeat(TestsRepeater.java:11)
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:35)
+	at com.intellij.rt.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:235)
+	at com.intellij.rt.junit.JUnitStarter.main(JUnitStarter.java:54)
 </pre>
       </div>
     </div>
@@ -720,7 +761,66 @@ Session ID: 12b87c1db42f07f30abfe199949e14a1
             <span class="keyword indention">After</span>
               <span class="location name">com.mesaj.app.util.reporting.PhotographerHook.takeScreenshotAfterEveryStep(io.cucumber.java.Scenario)</span>
 
-  <span class="lead-duration duration">0.001</span>
+  <span class="lead-duration duration">0.000</span>
+
+          </div>
+
+
+
+
+
+
+
+        </div>
+    </div>
+  </div>
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then skipped">
+  <span class="keyword indention">Then</span>
+  <span class="name">el no puede ingresar al backoffice</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <div class="inner-level hooks-step-after">
+    <div data-toggle="collapse" class=" collapsable-control" data-target="#after-14">
+
+<div class="brief failed">
+  <span class="keyword indention">Hooks</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+    </div>
+
+    <div id="after-14" class="inner-level collapse collapsable-details  in ">
+        <div class="hook">
+          <div class="brief skipped">
+            <span class="keyword indention">After</span>
+              <span class="location name">com.mesaj.app.util.reporting.PhotographerHook.takeScreenshotAfterEveryStep(io.cucumber.java.Scenario)</span>
+
+  <span class="lead-duration duration">0.000</span>
 
           </div>
 
@@ -742,7 +842,7 @@ Session ID: 12b87c1db42f07f30abfe199949e14a1
 
 
   <div class="inner-level hooks-element-after">
-    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-14">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-15">
 
 <div class="brief passed">
   <span class="keyword indention">Hooks</span>
@@ -754,7 +854,7 @@ Session ID: 12b87c1db42f07f30abfe199949e14a1
 
     </div>
 
-    <div id="after-14" class="inner-level collapse collapsable-details ">
+    <div id="after-15" class="inner-level collapse collapsable-details ">
         <div class="hook">
           <div class="brief passed">
             <span class="keyword indention">After</span>
@@ -776,7 +876,7 @@ Session ID: 12b87c1db42f07f30abfe199949e14a1
             <span class="keyword indention">After</span>
               <span class="location name">com.mesaj.app.util.reporting.PhotographerHook.takeScreenshotAfterFailingScenario(io.cucumber.java.Scenario)</span>
 
-  <span class="lead-duration duration">0.004</span>
+  <span class="lead-duration duration">0.116</span>
 
           </div>
 
@@ -785,6 +885,21 @@ Session ID: 12b87c1db42f07f30abfe199949e14a1
 
 
 
+  <div class="embeddings inner-level">
+  <div class="embedding indention">
+    <div data-toggle="collapse" data-target="#embedding-16" class="collapsable-control">
+      <a>5e39ff5e-ff12-4167-8b13-a1005207c085</a>
+      <a href="embeddings/embedding_-1938663796.png" download target="_blank">
+        <span class="download-button glyphicon glyphicon-download-alt"></span>
+      </a>
+    </div>
+    <div id="embedding-16" class="collapse collapsable-details ">
+      <div class="embedding-content">
+        <img src="embeddings/embedding_-1938663796.png">
+      </div>
+    </div>
+  </div>
+  </div>
 
         </div>
     </div>

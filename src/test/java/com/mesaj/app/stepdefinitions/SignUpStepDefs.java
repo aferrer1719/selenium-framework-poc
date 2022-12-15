@@ -7,6 +7,8 @@ import com.mesaj.app.tasks.UserSignUp;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
+import org.junit.Assert;
+import org.openqa.selenium.Alert;
 import org.springframework.beans.factory.annotation.Autowired;
 
 import static org.assertj.core.api.Assertions.assertThat;
@@ -49,8 +51,8 @@ public class SignUpStepDefs {
 
     }
 
-    @Then("^el no puede ingresar al backoffice$")
-    public void el_no_puede_ingresar_al_backoffice() {
+    @When("^el no ingresa la informacion requerida para autenticarse$")
+        public void ingresar_informacion(){
         signUp.withInfo(UserBuilder
                 .anUser()
                 .withDefaultInfo()
@@ -64,8 +66,13 @@ public class SignUpStepDefs {
         } catch (InterruptedException e) {
             throw new RuntimeException(e);
         }
+    }
+
+    @Then("^el no puede ingresar al backoffice$")
+    public void el_no_puede_ingresar_al_backoffice() {
 
         assertThat(true).isEqualTo(false);
+
 
     }
 }

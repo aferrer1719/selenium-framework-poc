@@ -18,5 +18,6 @@ Feature: Client sign up
 
  Scenario: client sign up failed 2
   Given Miguel quiere ingresar al backoffice
+   When el no ingresa la informacion requerida para autenticarse
   Then el no puede ingresar al backoffice
 
