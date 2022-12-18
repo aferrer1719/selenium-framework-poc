@@ -21,7 +21,7 @@ public class SignUpPageObject extends PageBase{
     @FindBy(xpath = "//body/div[@id='wrapper-mobiApp']/div[1]/div[1]/div[2]/div[1]/div[1]/input[1]")
     private WebElement usuarioTextbox;
 
-    @FindBy(xpath = "//body/div[@id='wrapper-mobiApp']/div[1]/div[1]/div[2]/div[2]/div[1]/input[1]")
+    @FindBy(xpath ="//body/div[@id='wrapper-mobiApp']/div[1]/div[1]/div[2]/div[2]/div[1]/input[1]")
     private WebElement contrasena;
 
     @FindBy(xpath= "//body/div[@id='wrapper-mobiApp']/div[1]/div[1]/div[3]/button[1]")
