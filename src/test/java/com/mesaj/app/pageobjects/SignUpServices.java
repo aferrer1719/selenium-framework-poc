@@ -44,12 +44,7 @@ public class SignUpServices {
         this.signUpPageObject.getPantallaPrincipal().isDisplayed();
      }
 
-     public void seleccionarRooms(){
-        this.signUpPageObject.getRooms().click();
-     }
 
-     public void seleccionarListRooms(){
-        this.signUpPageObject.getListRooms().click();
 
-     }
+
 }

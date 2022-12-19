@@ -30,9 +30,5 @@ public class SignUpPageObject extends PageBase{
     @FindBy (xpath = "//body/div[@id='wrapper-mobiApp']/div[2]/div[2]/div[1]/div[3]")
     private WebElement pantallaPrincipal;
 
-    @FindBy (xpath = "//body/div[@id='wrapper-mobiApp']/div[1]/div[1]/div[1]/div[5]/div[1]/label[1]/span[1]")
-    private WebElement Rooms;
 
-    @FindBy (xpath = "//body/div[@id='wrapper-mobiApp']/div[1]/div[1]/div[1]/div[5]/div[2]/a[1]/div[1]/label[1]/span[1]")
-    private WebElement ListRooms;
 }

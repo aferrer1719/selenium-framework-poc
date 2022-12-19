@@ -22,8 +22,5 @@ public class UserSignUp {
 
     }
 
-    public void clicInfo(UserSignUp userSignUp){
-        signUp.seleccionarRooms();
-        signUp.seleccionarListRooms();
-    }
+
 }

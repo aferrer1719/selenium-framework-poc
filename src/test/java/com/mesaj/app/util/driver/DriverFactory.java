@@ -16,7 +16,7 @@ import java.net.URI;
 @Component
 public class DriverFactory {
 
-    private static String pathFormat = System.getProperty("user.dir") + "/src/test/resources/drivers/mac/%s";
+    //private static String pathFormat = System.getProperty("user.dir") + "/src/test/resources/drivers/mac/%s";
 
     @Value("${grid.url}")
     private String gridUrl;
