@@ -21,7 +21,7 @@ public class SignUpStepDefs {
     @Autowired
     private NavigateTo navigate;
 
-    @Given("^Miguel quiere ingresar al backoffice$")
+   /* @Given("^Miguel quiere ingresar al backoffice$")
     public void ingresar_al_backoffice() throws InterruptedException {
         navigate.signUpPage();
         Thread.sleep(4000);
@@ -30,7 +30,8 @@ public class SignUpStepDefs {
     @When("^el envia la  informacion requerida para ingresar$")
     public void Enviar_informacion_requerida_para_ingresar() {
 
-
+        navigate.signUpPage();
+        Thread.sleep(4000);
 
             signUp.withInfo(UserBuilder
                             .anUser()
@@ -49,6 +50,28 @@ public class SignUpStepDefs {
 
         assertThat(true).isEqualTo(true);
 
+    }*/
+
+    @Given("^Miguel ingresa al backoffice con usuario y contraseña validos$")
+    public void miguelQuiereIngresarAlBackofficeConUsuarioYContraseñaValidos() {
+
+        navigate.signUpPage();
+        try {
+            Thread.sleep(4000);
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
+        }
+
+        signUp.withInfo(UserBuilder
+                .anUser()
+                .withDefaultInfo()
+                .build());
+        try {
+            Thread.sleep(3000);
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
+        }
+        assertThat(true).isEqualTo(true);
     }
 
 

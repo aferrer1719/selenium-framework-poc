@@ -21,7 +21,7 @@ public class MenuSalasStepDefs {
     @Autowired
     private UserSelectSalas selectSalas;
 
-    @Given("Miguel ingresa al backoffice")
+  /*  @Given("Miguel ingresa al backoffice")
     public void miguelIngresaAlBackoffice() throws InterruptedException {
         navigate.signUpPage();
         Thread.sleep(4000);
@@ -35,15 +35,15 @@ public class MenuSalasStepDefs {
         } catch (InterruptedException e) {
             throw new RuntimeException(e);
         }
-    }
+    }*/
 
-    @When("^el selecciona las opciones requeridas para ingresar$")
+    @When("^el selecciona las opciones requeridas para ingresar a la lista de salas$")
     public void elSeleccionaLasOpcionesRequeridas() throws InterruptedException  {
         selectSalas.selectUserSala();
         Thread.sleep(4000);
     }
 
-    @Then("^el puede ingresar satisfactorimente a la pantalla de lista de salas$")
+    @Then("^el puede ver la pantalla de lista de salas$")
     public void elPuedeIngresarALaPantallaDeListaDeSalas() {
         assertThat(true).isEqualTo(true);
         try {

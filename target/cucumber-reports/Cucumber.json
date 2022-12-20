@@ -1,13 +1,45 @@
 [
   {
-    "line": 1,
+    "line": 2,
     "elements": [
       {
-        "start_timestamp": "2022-12-19T11:40:30.792Z",
+        "line": 6,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 23796000000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "Miguel ingresa al backoffice con usuario y contraseña validos",
+            "match": {
+              "location": "com.mesaj.app.stepdefinitions.SignUpStepDefs.miguelQuiereIngresarAlBackofficeConUsuarioYContraseñaValidos()"
+            },
+            "after": [
+              {
+                "result": {
+                  "duration": 6000000,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "com.mesaj.app.util.reporting.PhotographerHook.takeScreenshotAfterEveryStep(io.cucumber.java.Scenario)"
+                }
+              }
+            ],
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-12-19T23:28:51.676Z",
         "before": [
           {
             "result": {
-              "duration": 11000000,
+              "duration": 10000000,
               "status": "passed"
             },
             "match": {
@@ -15,10 +47,10 @@
             }
           }
         ],
-        "line": 4,
-        "name": "Miguel ingresa satisfactoriamente al backoffice",
+        "line": 14,
+        "name": "ingresar a la lista de salas de bingo satisfactoriamente",
         "description": "",
-        "id": "client-sign-up;miguel-ingresa-satisfactoriamente-al-backoffice",
+        "id": "jugador-ingresa-exitosamente-a-una-sala-de-bingo;ingresar-a-la-lista-de-salas-de-bingo-satisfactoriamente",
         "after": [
           {
             "result": {
@@ -43,146 +75,11 @@
         "steps": [
           {
             "result": {
-              "duration": 22296000000,
-              "status": "passed"
-            },
-            "line": 5,
-            "name": "Miguel quiere ingresar al backoffice",
-            "match": {
-              "location": "com.mesaj.app.stepdefinitions.SignUpStepDefs.ingresar_al_backoffice()"
-            },
-            "after": [
-              {
-                "result": {
-                  "duration": 7000000,
-                  "status": "passed"
-                },
-                "match": {
-                  "location": "com.mesaj.app.util.reporting.PhotographerHook.takeScreenshotAfterEveryStep(io.cucumber.java.Scenario)"
-                }
-              }
-            ],
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 7995000000,
-              "status": "passed"
-            },
-            "line": 6,
-            "name": "el envia la  informacion requerida para ingresar",
-            "match": {
-              "location": "com.mesaj.app.stepdefinitions.SignUpStepDefs.Enviar_informacion_requerida_para_ingresar()"
-            },
-            "after": [
-              {
-                "result": {
-                  "status": "passed"
-                },
-                "match": {
-                  "location": "com.mesaj.app.util.reporting.PhotographerHook.takeScreenshotAfterEveryStep(io.cucumber.java.Scenario)"
-                }
-              }
-            ],
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 178000000,
-              "status": "passed"
-            },
-            "line": 7,
-            "name": "el puede ingresar correctamente y ver la pantalla principal",
-            "match": {
-              "location": "com.mesaj.app.stepdefinitions.SignUpStepDefs.ver_Pantalla_Principal()"
-            },
-            "after": [
-              {
-                "result": {
-                  "status": "passed"
-                },
-                "match": {
-                  "location": "com.mesaj.app.util.reporting.PhotographerHook.takeScreenshotAfterEveryStep(io.cucumber.java.Scenario)"
-                }
-              }
-            ],
-            "keyword": "Then "
-          }
-        ],
-        "tags": [
-          {
-            "name": "@run"
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2022-12-19T11:41:02.275Z",
-        "before": [
-          {
-            "result": {
-              "duration": 1000000,
-              "status": "passed"
-            },
-            "match": {
-              "location": "com.mesaj.app.CucumberSpringContextConfiguration.setup()"
-            }
-          }
-        ],
-        "line": 14,
-        "name": "Miguel ingresa a la lista de salas de bingo satisfactoriamente",
-        "description": "",
-        "id": "client-sign-up;miguel-ingresa-a-la-lista-de-salas-de-bingo-satisfactoriamente",
-        "after": [
-          {
-            "result": {
-              "status": "passed"
-            },
-            "match": {
-              "location": "com.mesaj.app.util.reporting.PhotographerHook.takeScreenshotAfterScenario(io.cucumber.java.Scenario)"
-            }
-          },
-          {
-            "result": {
-              "status": "passed"
-            },
-            "match": {
-              "location": "com.mesaj.app.util.reporting.PhotographerHook.takeScreenshotAfterFailingScenario(io.cucumber.java.Scenario)"
-            }
-          }
-        ],
-        "type": "scenario",
-        "keyword": "Scenario",
-        "steps": [
-          {
-            "result": {
-              "duration": 22433000000,
+              "duration": 4430000000,
               "status": "passed"
             },
             "line": 15,
-            "name": "Miguel ingresa al backoffice",
-            "match": {
-              "location": "com.mesaj.app.stepdefinitions.MenuSalasStepDefs.miguelIngresaAlBackoffice()"
-            },
-            "after": [
-              {
-                "result": {
-                  "duration": 2000000,
-                  "status": "passed"
-                },
-                "match": {
-                  "location": "com.mesaj.app.util.reporting.PhotographerHook.takeScreenshotAfterEveryStep(io.cucumber.java.Scenario)"
-                }
-              }
-            ],
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 4397000000,
-              "status": "passed"
-            },
-            "line": 16,
-            "name": "el selecciona las opciones requeridas para ingresar",
+            "name": "el selecciona las opciones requeridas para ingresar a la lista de salas",
             "match": {
               "location": "com.mesaj.app.stepdefinitions.MenuSalasStepDefs.elSeleccionaLasOpcionesRequeridas()"
             },
@@ -200,11 +97,11 @@
           },
           {
             "result": {
-              "duration": 3001000000,
+              "duration": 3002000000,
               "status": "passed"
             },
-            "line": 17,
-            "name": "el puede ingresar satisfactorimente a la pantalla de lista de salas",
+            "line": 16,
+            "name": "el puede ver la pantalla de lista de salas",
             "match": {
               "location": "com.mesaj.app.stepdefinitions.MenuSalasStepDefs.elPuedeIngresarALaPantallaDeListaDeSalas()"
             },
@@ -221,14 +118,28 @@
             ],
             "keyword": "Then "
           }
+        ],
+        "tags": [
+          {
+            "name": "@run"
+          }
         ]
       }
     ],
-    "name": "Client sign up",
-    "description": "",
-    "id": "client-sign-up",
+    "name": "Jugador ingresa exitosamente a una sala de bingo",
+    "description": "Como jugador\nquiero ingresar a una sala de bingo\npara iniciar mi juego e intercatuar con otros jugadores.",
+    "id": "jugador-ingresa-exitosamente-a-una-sala-de-bingo",
     "keyword": "Feature",
     "uri": "file:src/test/resources/features/signup.feature",
-    "tags": []
+    "tags": [
+      {
+        "name": "@run",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
   }
 ]
