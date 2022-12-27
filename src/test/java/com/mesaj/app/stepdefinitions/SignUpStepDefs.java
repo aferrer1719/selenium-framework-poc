@@ -21,6 +21,8 @@ public class SignUpStepDefs {
     @Autowired
     private NavigateTo navigate;
 
+
+
    /* @Given("^Miguel quiere ingresar al backoffice$")
     public void ingresar_al_backoffice() throws InterruptedException {
         navigate.signUpPage();
@@ -96,8 +98,14 @@ public class SignUpStepDefs {
     @Then("^el no puede ingresar al backoffice$")
     public void el_no_puede_ingresar_al_backoffice() throws InterruptedException {
 
+        Assert.assertTrue(signUp.withInfo(UserBuilder
+                .anUser()
+                .withDefaultInfo()
+                .but()
+                .withoutUsuario()
+                .withoutContrasena()
+                .build()));*/
 
-        throw new IllegalArgumentException("User and Password required");
 
-    }*/
+
 }

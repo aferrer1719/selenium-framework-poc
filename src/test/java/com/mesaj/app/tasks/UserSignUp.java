@@ -13,14 +13,15 @@ public class UserSignUp {
     @Autowired
     private SignUpServices signUp;
 
-    public void withInfo(User user) {
+    public boolean withInfo(User user) {
 
         signUp.writeUsuario(user.getUsuario());
         signUp.writeContrasena(user.getContrasena());
         signUp.clickOnSubmit();
         signUp.pantallaPrincipal();
-
+        return false;
     }
+
 
 
 }
