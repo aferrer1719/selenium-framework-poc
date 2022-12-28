@@ -23,6 +23,8 @@ public class UserBingoChat {
           bingoChat.SwitchWindowToChild();
       }
 
+
+
       public void salaChat() {
         bingoChat.contendorChat();
         bingoChat.botonChat();

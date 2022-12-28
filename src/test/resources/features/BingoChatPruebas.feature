@@ -11,6 +11,10 @@ para iniciar mi juego e intercatuar con otros jugadores.
  #When el no ingresa la informacion requerida para autenticarse
 # Then el no puede ingresar al backoffice
 
+  Scenario: Usuario y Manager chatean
+    Given Usuario se encuentra en sala de bingo como jugador
+    When Manager se encuentra en sala de bingo como manager
+
   Scenario:Miguel ingresa como jugador a la lista de salas de bingo satisfactoriamente
  When  Miguel selecciona las opciones requeridas para ingresar a la lista de salas
  Then  el puede ver la pantalla Rooms List
