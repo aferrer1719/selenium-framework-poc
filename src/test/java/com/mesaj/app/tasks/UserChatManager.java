@@ -20,13 +20,13 @@ public class UserChatManager {
     }
 
     public void seleccionarChat() {
-        chatManager.botonChat();
+        chatManager.contenedorAreaChat();
         chatManager.seleccionarBotonChat();
           }
 
     public void withMensaje(Msg msg) {
         chatManager.hacerClickCampoMensaje();
-        chatManager.writeMensaje(msg.getMensaje());
+        chatManager.writeMensaje(msg.getMensajeChatManager());
     }
 
     public void enviarMensajeChat(){

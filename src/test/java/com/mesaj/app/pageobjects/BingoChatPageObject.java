@@ -21,7 +21,6 @@ public class BingoChatPageObject extends PageBase {
         super(driver);
     }
 
-
     @FindBy (xpath = "//div[@id='chatAreaBtsBar-mobiLayout']")
     private WebElement areaChat;
 
@@ -33,8 +32,6 @@ public class BingoChatPageObject extends PageBase {
 
     @FindBy (xpath = "//button[@id='chat-send-bt-mobiLayout']")
     private WebElement botonEnviar;
-
-
 
 }
 

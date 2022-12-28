@@ -1,10 +1,7 @@
 package com.mesaj.app.pageobjects;
 
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.FluentWait;
-import org.openqa.selenium.support.ui.Wait;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Scope;
@@ -12,7 +9,6 @@ import org.springframework.stereotype.Component;
 
 import java.util.Iterator;
 import java.util.Set;
-import java.util.concurrent.TimeUnit;
 
 @Component
 @Scope("cucumber-glue")
@@ -113,9 +109,10 @@ public class IngresoChatManagerServices {
         driver.switchTo().window(childWindow);
     }
 
-    public void botonChat(){
+
+    public void contenedorAreaChat(){
         this.wait.until(ExpectedConditions.visibilityOf(this.ingresoChatManager.getAreaChat()));
-        this.ingresoChatManager.getAreaChat().click();
+        this.ingresoChatManager.getAreaChat().isDisplayed();
     }
 
     public void seleccionarBotonChat(){

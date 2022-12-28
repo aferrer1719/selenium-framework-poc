@@ -40,7 +40,7 @@ public class IngresoChatManager {
     }
 
     @When("^ella selecciona la opcion para ingresar a una sala de chat$")
-    public void ellaSeleccionaLaOpcionQueLePermiteIngresarAUnaSalaDeChat()throws InterruptedException {
+    public void ellaSeleccionaLaOpcionQueLePermiteIngresarAUnaSalaDeChat() {
 
                try {
             Thread.sleep(15000);
@@ -59,13 +59,13 @@ public class IngresoChatManager {
                 .anUser()
                 .withDefaultInfo()
                 .build());
-        Thread.sleep(6000);
+        Thread.sleep(3000);
     }
 
-    @And("enviar un mensaje a todos")
+    @And("^enviar un mensaje a todos$")
     public void enviarUnMensajeATodos()throws InterruptedException {
         userChatManager.enviarMensajeChat();
-                    Thread.sleep(6000);
+                    Thread.sleep(5000);
 
     }
 }

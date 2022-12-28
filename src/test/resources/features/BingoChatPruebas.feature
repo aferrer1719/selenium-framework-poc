@@ -11,20 +11,16 @@ para iniciar mi juego e intercatuar con otros jugadores.
  #When el no ingresa la informacion requerida para autenticarse
 # Then el no puede ingresar al backoffice
 
- #Scenario:Miguel ingresa como jugador a la lista de salas de bingo satisfactoriamente
- # When  Miguel selecciona las opciones requeridas para ingresar a la lista de salas
- # Then  el puede ver la pantalla Rooms List
- # And   seleccionar las opciones para ingresar al tipo de bingo que desea jugar
+  Scenario:Miguel ingresa como jugador a la lista de salas de bingo satisfactoriamente
+ When  Miguel selecciona las opciones requeridas para ingresar a la lista de salas
+ Then  el puede ver la pantalla Rooms List
+ And   seleccionar las opciones para ingresar al tipo de bingo que desea jugar
 
-
- #Scenario: Miguel ingresa como jugador a la sala de chat satisfactoriamente
- #  Given Miguel se encuentra en sala de bingo como jugador
- #  When  el selecciona la opcion que le permite ingresar a una sala de chat
- #  Then el ingresa a la sala de chat con jugadores de su mismo idioma
- #  And  envia un mensaje
-
-
-
+  Scenario: Miguel ingresa como jugador a la sala de chat satisfactoriamente
+ Given Miguel se encuentra en sala de bingo como jugador
+  When  el selecciona la opcion que le permite ingresar a una sala de chat
+  Then el ingresa a la sala de chat con jugadores de su mismo idioma
+  And  envia un mensaje
 
   Scenario:Raquel ingresa como manager a la lista de salas de bingo satisfactoriamente
     When  Raquel selecciona las opciones para ingresar a la lista de salas
