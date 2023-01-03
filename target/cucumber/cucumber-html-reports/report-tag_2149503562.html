@@ -74,7 +74,7 @@ $(document).ready(function() {
   <tbody>
     <tr class="info">
       <td>No Name (add projectName to cucumber-reporting.properties)</td>
-      <td>27 Dec 2022, 20:49</td>
+      <td>02 Jan 2023, 20:25</td>
     </tr>
   </tbody>
 </table>
@@ -127,19 +127,19 @@ $(document).ready(function() {
         <tbody>
         <tr>
           <td class="tagname">@run</td>
-          <td      class="passed"    >14</td>
+          <td      class="passed"    >15</td>
+          <td      class="failed"    >1</td>
           <td >0</td>
           <td >0</td>
           <td >0</td>
-          <td >0</td>
-          <td class="total">14</td>
+          <td class="total">16</td>
 
           <td  class="passed"    >4</td>
-          <td >0</td>
-          <td class="total">4</td>
+          <td  class="failed"    >1</td>
+          <td class="total">5</td>
 
-          <td class="duration" data-value="91318000000">1:31.318</td>
-          <td class="passed">Passed</td>
+          <td class="duration" data-value="202293000000">3:22.293</td>
+          <td class="failed">Failed</td>
         </tr>
         </tbody>
 
@@ -181,14 +181,14 @@ $(document).ready(function() {
 </div>
 
 
-  <span class="lead-duration duration">12.393</span>
+  <span class="lead-duration duration">1:47.051</span>
 
 
-  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-1">
+  <span data-toggle="collapse" class=" collapsable-control" data-target="#element-1">
 
-<div class="brief passed">
+<div class="brief failed">
   <span class="keyword indention">Scenario</span>
-  <span class="name">Miguel ingresa como jugador a la lista de salas de bingo satisfactoriamente</span>
+  <span class="name">Usuario y Manager chatean</span>
 
 
      <i class="chevron fa fa-fw"></i>
@@ -197,7 +197,7 @@ $(document).ready(function() {
   </span>
   <div class="description indention"></div>
 
-  <div id="element-1" class="collapse collapsable-details ">
+  <div id="element-1" class="collapse collapsable-details  in ">
 
 
   <div class="inner-level hooks-element-before">
@@ -219,7 +219,7 @@ $(document).ready(function() {
             <span class="keyword indention">Before</span>
               <span class="location name">com.mesaj.app.CucumberSpringContextConfiguration.setup()</span>
 
-  <span class="lead-duration duration">0.006</span>
+  <span class="lead-duration duration">0.013</span>
 
           </div>
 
@@ -236,9 +236,9 @@ $(document).ready(function() {
 
 
 <div class="steps inner-level">
-  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-3">
+  <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-3">
 
-<div class="brief passed">
+<div class="brief failed">
   <span class="keyword indention">Steps</span>
   <span class="name"></span>
 
@@ -248,15 +248,15 @@ $(document).ready(function() {
 
   </div>
 
-  <div id="steps-3" class="inner-level collapse collapsable-details ">
+  <div id="steps-3" class="inner-level collapse collapsable-details  in ">
       <div class="step">
 
 
-<div class="brief step-name-When passed">
-  <span class="keyword indention">When</span>
-  <span class="name">Miguel selecciona las opciones requeridas para ingresar a la lista de salas</span>
+<div class="brief step-name-Given passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">Usuario se encuentra en sala de bingo como jugador</span>
 
-  <span class="lead-duration duration">4.222</span>
+  <span class="lead-duration duration">33.838</span>
 
 </div>
 
@@ -311,11 +311,11 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-Then passed">
-  <span class="keyword indention">Then</span>
-  <span class="name">el puede ver la pantalla Rooms List</span>
+<div class="brief step-name-When failed">
+  <span class="keyword indention">When</span>
+  <span class="name">Manager se encuentra en sala de bingo como manager</span>
 
-  <span class="lead-duration duration">3.823</span>
+  <span class="lead-duration duration">1:13.213</span>
 
 </div>
 
@@ -324,64 +324,95 @@ $(document).ready(function() {
 
 
 
-
-
-
-
-
-
-
-
-
-  <div class="inner-level hooks-step-after">
-    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-5">
-
-<div class="brief passed">
-  <span class="keyword indention">Hooks</span>
-  <span class="name"></span>
-
-
-     <i class="chevron fa fa-fw"></i>
-</div>
-
-    </div>
-
-    <div id="after-5" class="inner-level collapse collapsable-details ">
-        <div class="hook">
-          <div class="brief passed">
-            <span class="keyword indention">After</span>
-              <span class="location name">com.mesaj.app.util.reporting.PhotographerHook.takeScreenshotAfterEveryStep(io.cucumber.java.Scenario)</span>
-
-  <span class="lead-duration duration">0.000</span>
-
-          </div>
-
-
-
-
-
-
-
-        </div>
+  <div class="inner-level">
+    <div class="message indention">
+      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-5">
+          <a>org.openqa.selenium.TimeoutException:</a>
+      </div>
+      <div id="msg-5" class="collapse collapsable-details  in ">
+        <pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.xpath: //body/div[@id='wrapper-mobiApp']/div[2]/div[2]/div[1]/div[3]' (tried for 60 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:138)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:234)
+	at com.mesaj.app.pageobjects.SignUpServices.pantallaPrincipal(SignUpServices.java:45)
+	at com.mesaj.app.tasks.UserSignUp.withInfo(UserSignUp.java:21)
+	at com.mesaj.app.stepdefinitions.ChatUsuarioManager.LoginManager(ChatUsuarioManager.java:96)
+	at com.mesaj.app.stepdefinitions.ChatUsuarioManager.ManagerIngresaAlChat(ChatUsuarioManager.java:133)
+	at &#10045;.Manager se encuentra en sala de bingo como manager(file:///C:/Users/RYZEN%205/IdeaProjects/selenium-framework-poc/src/test/resources/features/BingoChatPruebas.feature:13)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//body/div[@id='wrapper-mobiApp']/div[2]/div[2]/div[1]/div[3]&quot;}
+  (Session info: chrome=108.0.5359.95)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.0.0-alpha-4', revision: 'c2d955b49e'
+System info: host: 'ASUS-M509D', ip: '192.168.21.11', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_351'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.95, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\Users\RYZEN5~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:50404}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: d9add0a6d7f8bb8dfe8be6eac517fb81
+*** Element info: {Using=xpath, value=//body/div[@id='wrapper-mobiApp']/div[2]/div[2]/div[1]/div[3]}
+	at sun.reflect.GeneratedConstructorAccessor27.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:196)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:129)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:161)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:582)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:333)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:451)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:394)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:325)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+	at com.sun.proxy.$Proxy71.isDisplayed(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:314)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:43)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:300)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:297)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:211)
+	at com.mesaj.app.pageobjects.SignUpServices.pantallaPrincipal(SignUpServices.java:45)
+	at com.mesaj.app.tasks.UserSignUp.withInfo(UserSignUp.java:21)
+	at com.mesaj.app.stepdefinitions.ChatUsuarioManager.LoginManager(ChatUsuarioManager.java:96)
+	at com.mesaj.app.stepdefinitions.ChatUsuarioManager.ManagerIngresaAlChat(ChatUsuarioManager.java:133)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at io.cucumber.java.Invoker.invoke(Invoker.java:27)
+	at io.cucumber.java.JavaStepDefinition.execute(JavaStepDefinition.java:27)
+	at io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:63)
+	at io.cucumber.core.runner.TestStep.executeStep(TestStep.java:64)
+	at io.cucumber.core.runner.TestStep.run(TestStep.java:49)
+	at io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:46)
+	at io.cucumber.core.runner.TestCase.run(TestCase.java:51)
+	at io.cucumber.core.runner.Runner.runPickle(Runner.java:67)
+	at io.cucumber.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:149)
+	at io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:83)
+	at io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:24)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at io.cucumber.junit.Cucumber.runChild(Cucumber.java:185)
+	at io.cucumber.junit.Cucumber.runChild(Cucumber.java:83)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at io.cucumber.junit.Cucumber$RunCucumber.evaluate(Cucumber.java:219)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+	at com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:69)
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater$1.execute(IdeaTestRunner.java:38)
+	at com.intellij.rt.execution.junit.TestsRepeater.repeat(TestsRepeater.java:11)
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:35)
+	at com.intellij.rt.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:235)
+	at com.intellij.rt.junit.JUnitStarter.main(JUnitStarter.java:54)
+</pre>
+      </div>
     </div>
   </div>
-
-      </div>
-      <div class="step">
-
-
-<div class="brief step-name-And passed">
-  <span class="keyword indention">And</span>
-  <span class="name">seleccionar las opciones para ingresar al tipo de bingo que desea jugar</span>
-
-  <span class="lead-duration duration">4.348</span>
-
-</div>
-
-
-
-
-
 
 
 
@@ -451,7 +482,7 @@ $(document).ready(function() {
             <span class="keyword indention">After</span>
               <span class="location name">com.mesaj.app.util.reporting.PhotographerHook.takeScreenshotAfterFailingScenario(io.cucumber.java.Scenario)</span>
 
-  <span class="lead-duration duration">0.002</span>
+  <span class="lead-duration duration">0.134</span>
 
           </div>
 
@@ -460,6 +491,21 @@ $(document).ready(function() {
 
 
 
+  <div class="embeddings inner-level">
+  <div class="embedding indention">
+    <div data-toggle="collapse" data-target="#embedding-8" class="collapsable-control">
+      <a>82398de5-5bd0-4d6e-ad55-bfa0fa328d0f</a>
+      <a href="embeddings/embedding_-1738746587.png" download target="_blank">
+        <span class="download-button glyphicon glyphicon-download-alt"></span>
+      </a>
+    </div>
+    <div id="embedding-8" class="collapse collapsable-details ">
+      <div class="embedding-content">
+        <img src="embeddings/embedding_-1738746587.png">
+      </div>
+    </div>
+  </div>
+  </div>
 
         </div>
         <div class="hook">
@@ -498,14 +544,14 @@ $(document).ready(function() {
 </div>
 
 
-  <span class="lead-duration duration">32.903</span>
+  <span class="lead-duration duration">12.846</span>
 
 
-  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-8">
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-9">
 
 <div class="brief passed">
   <span class="keyword indention">Scenario</span>
-  <span class="name">Miguel ingresa como jugador a la sala de chat satisfactoriamente</span>
+  <span class="name">Miguel ingresa como jugador a la lista de salas de bingo satisfactoriamente</span>
 
 
      <i class="chevron fa fa-fw"></i>
@@ -514,11 +560,11 @@ $(document).ready(function() {
   </span>
   <div class="description indention"></div>
 
-  <div id="element-8" class="collapse collapsable-details ">
+  <div id="element-9" class="collapse collapsable-details ">
 
 
   <div class="inner-level hooks-element-before">
-    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#before-9">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#before-10">
 
 <div class="brief passed">
   <span class="keyword indention">Hooks</span>
@@ -530,7 +576,7 @@ $(document).ready(function() {
 
     </div>
 
-    <div id="before-9" class="inner-level collapse collapsable-details ">
+    <div id="before-10" class="inner-level collapse collapsable-details ">
         <div class="hook">
           <div class="brief passed">
             <span class="keyword indention">Before</span>
@@ -553,7 +599,7 @@ $(document).ready(function() {
 
 
 <div class="steps inner-level">
-  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-10">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-11">
 
 <div class="brief passed">
   <span class="keyword indention">Steps</span>
@@ -565,74 +611,15 @@ $(document).ready(function() {
 
   </div>
 
-  <div id="steps-10" class="inner-level collapse collapsable-details ">
-      <div class="step">
-
-
-<div class="brief step-name-Given passed">
-  <span class="keyword indention">Given</span>
-  <span class="name">Miguel se encuentra en sala de bingo como jugador</span>
-
-  <span class="lead-duration duration">11.194</span>
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  <div class="inner-level hooks-step-after">
-    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-11">
-
-<div class="brief passed">
-  <span class="keyword indention">Hooks</span>
-  <span class="name"></span>
-
-
-     <i class="chevron fa fa-fw"></i>
-</div>
-
-    </div>
-
-    <div id="after-11" class="inner-level collapse collapsable-details ">
-        <div class="hook">
-          <div class="brief passed">
-            <span class="keyword indention">After</span>
-              <span class="location name">com.mesaj.app.util.reporting.PhotographerHook.takeScreenshotAfterEveryStep(io.cucumber.java.Scenario)</span>
-
-  <span class="lead-duration duration">0.000</span>
-
-          </div>
-
-
-
-
-
-
-
-        </div>
-    </div>
-  </div>
-
-      </div>
+  <div id="steps-11" class="inner-level collapse collapsable-details ">
       <div class="step">
 
 
 <div class="brief step-name-When passed">
   <span class="keyword indention">When</span>
-  <span class="name">el selecciona la opcion que le permite ingresar a una sala de chat</span>
+  <span class="name">Miguel selecciona las opciones requeridas para ingresar a la lista de salas</span>
 
-  <span class="lead-duration duration">15.243</span>
+  <span class="lead-duration duration">4.284</span>
 
 </div>
 
@@ -689,9 +676,9 @@ $(document).ready(function() {
 
 <div class="brief step-name-Then passed">
   <span class="keyword indention">Then</span>
-  <span class="name">el ingresa a la sala de chat con jugadores de su mismo idioma</span>
+  <span class="name">el puede ver la pantalla Rooms List</span>
 
-  <span class="lead-duration duration">3.336</span>
+  <span class="lead-duration duration">3.085</span>
 
 </div>
 
@@ -748,9 +735,9 @@ $(document).ready(function() {
 
 <div class="brief step-name-And passed">
   <span class="keyword indention">And</span>
-  <span class="name">envia un mensaje</span>
+  <span class="name">seleccionar las opciones para ingresar al tipo de bingo que desea jugar</span>
 
-  <span class="lead-duration duration">3.130</span>
+  <span class="lead-duration duration">5.477</span>
 
 </div>
 
@@ -874,14 +861,14 @@ $(document).ready(function() {
 </div>
 
 
-  <span class="lead-duration duration">10.971</span>
+  <span class="lead-duration duration">33.895</span>
 
 
   <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-16">
 
 <div class="brief passed">
   <span class="keyword indention">Scenario</span>
-  <span class="name">Raquel ingresa como manager a la lista de salas de bingo satisfactoriamente</span>
+  <span class="name">Miguel ingresa como jugador a la sala de chat satisfactoriamente</span>
 
 
      <i class="chevron fa fa-fw"></i>
@@ -945,11 +932,11 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-When passed">
-  <span class="keyword indention">When</span>
-  <span class="name">Raquel selecciona las opciones para ingresar a la lista de salas</span>
+<div class="brief step-name-Given passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">Miguel se encuentra en sala de bingo como jugador</span>
 
-  <span class="lead-duration duration">3.214</span>
+  <span class="lead-duration duration">11.787</span>
 
 </div>
 
@@ -1004,11 +991,11 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-Then passed">
-  <span class="keyword indention">Then</span>
-  <span class="name">ella puede ver la pantalla RoomsList</span>
+<div class="brief step-name-When passed">
+  <span class="keyword indention">When</span>
+  <span class="name">el selecciona la opcion que le permite ingresar a una sala de chat</span>
 
-  <span class="lead-duration duration">3.091</span>
+  <span class="lead-duration duration">15.299</span>
 
 </div>
 
@@ -1063,11 +1050,11 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-And passed">
-  <span class="keyword indention">And</span>
-  <span class="name">seleccionar opciones para ingresar al bingo que desea jugar</span>
+<div class="brief step-name-Then passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">el ingresa a la sala de chat con jugadores de su mismo idioma</span>
 
-  <span class="lead-duration duration">4.666</span>
+  <span class="lead-duration duration">3.490</span>
 
 </div>
 
@@ -1119,13 +1106,32 @@ $(document).ready(function() {
   </div>
 
       </div>
-  </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">envia un mensaje</span>
+
+  <span class="lead-duration duration">3.319</span>
+
 </div>
 
 
 
 
-  <div class="inner-level hooks-element-after">
+
+
+
+
+
+
+
+
+
+
+
+  <div class="inner-level hooks-step-after">
     <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-22">
 
 <div class="brief passed">
@@ -1139,6 +1145,46 @@ $(document).ready(function() {
     </div>
 
     <div id="after-22" class="inner-level collapse collapsable-details ">
+        <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">After</span>
+              <span class="location name">com.mesaj.app.util.reporting.PhotographerHook.takeScreenshotAfterEveryStep(io.cucumber.java.Scenario)</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+          </div>
+
+
+
+
+
+
+
+        </div>
+    </div>
+  </div>
+
+      </div>
+  </div>
+</div>
+
+
+
+
+  <div class="inner-level hooks-element-after">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-23">
+
+<div class="brief passed">
+  <span class="keyword indention">Hooks</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+    </div>
+
+    <div id="after-23" class="inner-level collapse collapsable-details ">
         <div class="hook">
           <div class="brief passed">
             <span class="keyword indention">After</span>
@@ -1191,14 +1237,14 @@ $(document).ready(function() {
 </div>
 
 
-  <span class="lead-duration duration">35.051</span>
+  <span class="lead-duration duration">11.689</span>
 
 
-  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-23">
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-24">
 
 <div class="brief passed">
   <span class="keyword indention">Scenario</span>
-  <span class="name">Raquel ingresa como manager a la sala de chat satisfactoriamente</span>
+  <span class="name">Raquel ingresa como manager a la lista de salas de bingo satisfactoriamente</span>
 
 
      <i class="chevron fa fa-fw"></i>
@@ -1207,11 +1253,11 @@ $(document).ready(function() {
   </span>
   <div class="description indention"></div>
 
-  <div id="element-23" class="collapse collapsable-details ">
+  <div id="element-24" class="collapse collapsable-details ">
 
 
   <div class="inner-level hooks-element-before">
-    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#before-24">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#before-25">
 
 <div class="brief passed">
   <span class="keyword indention">Hooks</span>
@@ -1223,7 +1269,7 @@ $(document).ready(function() {
 
     </div>
 
-    <div id="before-24" class="inner-level collapse collapsable-details ">
+    <div id="before-25" class="inner-level collapse collapsable-details ">
         <div class="hook">
           <div class="brief passed">
             <span class="keyword indention">Before</span>
@@ -1246,7 +1292,7 @@ $(document).ready(function() {
 
 
 <div class="steps inner-level">
-  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-25">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-26">
 
 <div class="brief passed">
   <span class="keyword indention">Steps</span>
@@ -1258,74 +1304,15 @@ $(document).ready(function() {
 
   </div>
 
-  <div id="steps-25" class="inner-level collapse collapsable-details ">
-      <div class="step">
-
-
-<div class="brief step-name-Given passed">
-  <span class="keyword indention">Given</span>
-  <span class="name">Raquel se encuentra en sala de bingo como manager</span>
-
-  <span class="lead-duration duration">11.206</span>
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  <div class="inner-level hooks-step-after">
-    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-26">
-
-<div class="brief passed">
-  <span class="keyword indention">Hooks</span>
-  <span class="name"></span>
-
-
-     <i class="chevron fa fa-fw"></i>
-</div>
-
-    </div>
-
-    <div id="after-26" class="inner-level collapse collapsable-details ">
-        <div class="hook">
-          <div class="brief passed">
-            <span class="keyword indention">After</span>
-              <span class="location name">com.mesaj.app.util.reporting.PhotographerHook.takeScreenshotAfterEveryStep(io.cucumber.java.Scenario)</span>
-
-  <span class="lead-duration duration">0.000</span>
-
-          </div>
-
-
-
-
-
-
-
-        </div>
-    </div>
-  </div>
-
-      </div>
+  <div id="steps-26" class="inner-level collapse collapsable-details ">
       <div class="step">
 
 
 <div class="brief step-name-When passed">
   <span class="keyword indention">When</span>
-  <span class="name">ella selecciona la opcion para ingresar a una sala de chat</span>
+  <span class="name">Raquel selecciona las opciones para ingresar a la lista de salas</span>
 
-  <span class="lead-duration duration">15.254</span>
+  <span class="lead-duration duration">3.297</span>
 
 </div>
 
@@ -1362,7 +1349,7 @@ $(document).ready(function() {
             <span class="keyword indention">After</span>
               <span class="location name">com.mesaj.app.util.reporting.PhotographerHook.takeScreenshotAfterEveryStep(io.cucumber.java.Scenario)</span>
 
-  <span class="lead-duration duration">0.001</span>
+  <span class="lead-duration duration">0.000</span>
 
           </div>
 
@@ -1382,9 +1369,9 @@ $(document).ready(function() {
 
 <div class="brief step-name-Then passed">
   <span class="keyword indention">Then</span>
-  <span class="name">ella ingresa a la sala de chat y puede ver a los jugadores de su mismo idioma</span>
+  <span class="name">ella puede ver la pantalla RoomsList</span>
 
-  <span class="lead-duration duration">3.451</span>
+  <span class="lead-duration duration">3.111</span>
 
 </div>
 
@@ -1441,9 +1428,9 @@ $(document).ready(function() {
 
 <div class="brief step-name-And passed">
   <span class="keyword indention">And</span>
-  <span class="name">enviar un mensaje a todos</span>
+  <span class="name">seleccionar opciones para ingresar al bingo que desea jugar</span>
 
-  <span class="lead-duration duration">5.140</span>
+  <span class="lead-duration duration">5.281</span>
 
 </div>
 
@@ -1515,6 +1502,382 @@ $(document).ready(function() {
     </div>
 
     <div id="after-30" class="inner-level collapse collapsable-details ">
+        <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">After</span>
+              <span class="location name">com.mesaj.app.util.reporting.PhotographerHook.takeScreenshotAfterFailingScenario(io.cucumber.java.Scenario)</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+          </div>
+
+
+
+
+
+
+
+        </div>
+        <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">After</span>
+              <span class="location name">com.mesaj.app.util.reporting.PhotographerHook.takeScreenshotAfterScenario(io.cucumber.java.Scenario)</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+          </div>
+
+
+
+
+
+
+
+        </div>
+    </div>
+  </div>
+
+  </div>
+</div>
+
+
+<div class="element">
+    <div class="indention">
+      <b>Feature:</b>
+      <a href="report-feature_3852173046.html">Jugador ingresa exitosamente a una sala de bingo</a>
+    </div>
+
+
+<div class="tags indention">
+    <b>Tags:</b>
+       <a href="report-tag_2149503562.html">@run</a>
+</div>
+
+
+  <span class="lead-duration duration">36.812</span>
+
+
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-31">
+
+<div class="brief passed">
+  <span class="keyword indention">Scenario</span>
+  <span class="name">Raquel ingresa como manager a la sala de chat satisfactoriamente</span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-31" class="collapse collapsable-details ">
+
+
+  <div class="inner-level hooks-element-before">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#before-32">
+
+<div class="brief passed">
+  <span class="keyword indention">Hooks</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+    </div>
+
+    <div id="before-32" class="inner-level collapse collapsable-details ">
+        <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">Before</span>
+              <span class="location name">com.mesaj.app.CucumberSpringContextConfiguration.setup()</span>
+
+  <span class="lead-duration duration">0.011</span>
+
+          </div>
+
+
+
+
+
+
+
+        </div>
+    </div>
+  </div>
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-33">
+
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-33" class="inner-level collapse collapsable-details ">
+      <div class="step">
+
+
+<div class="brief step-name-Given passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">Raquel se encuentra en sala de bingo como manager</span>
+
+  <span class="lead-duration duration">12.246</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <div class="inner-level hooks-step-after">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-34">
+
+<div class="brief passed">
+  <span class="keyword indention">Hooks</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+    </div>
+
+    <div id="after-34" class="inner-level collapse collapsable-details ">
+        <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">After</span>
+              <span class="location name">com.mesaj.app.util.reporting.PhotographerHook.takeScreenshotAfterEveryStep(io.cucumber.java.Scenario)</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+          </div>
+
+
+
+
+
+
+
+        </div>
+    </div>
+  </div>
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-When passed">
+  <span class="keyword indention">When</span>
+  <span class="name">ella selecciona la opcion para ingresar a una sala de chat</span>
+
+  <span class="lead-duration duration">15.373</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <div class="inner-level hooks-step-after">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-35">
+
+<div class="brief passed">
+  <span class="keyword indention">Hooks</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+    </div>
+
+    <div id="after-35" class="inner-level collapse collapsable-details ">
+        <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">After</span>
+              <span class="location name">com.mesaj.app.util.reporting.PhotographerHook.takeScreenshotAfterEveryStep(io.cucumber.java.Scenario)</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+          </div>
+
+
+
+
+
+
+
+        </div>
+    </div>
+  </div>
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">ella ingresa a la sala de chat y puede ver a los jugadores de su mismo idioma</span>
+
+  <span class="lead-duration duration">3.968</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <div class="inner-level hooks-step-after">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-36">
+
+<div class="brief passed">
+  <span class="keyword indention">Hooks</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+    </div>
+
+    <div id="after-36" class="inner-level collapse collapsable-details ">
+        <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">After</span>
+              <span class="location name">com.mesaj.app.util.reporting.PhotographerHook.takeScreenshotAfterEveryStep(io.cucumber.java.Scenario)</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+          </div>
+
+
+
+
+
+
+
+        </div>
+    </div>
+  </div>
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">enviar un mensaje a todos</span>
+
+  <span class="lead-duration duration">5.225</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <div class="inner-level hooks-step-after">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-37">
+
+<div class="brief passed">
+  <span class="keyword indention">Hooks</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+    </div>
+
+    <div id="after-37" class="inner-level collapse collapsable-details ">
+        <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">After</span>
+              <span class="location name">com.mesaj.app.util.reporting.PhotographerHook.takeScreenshotAfterEveryStep(io.cucumber.java.Scenario)</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+          </div>
+
+
+
+
+
+
+
+        </div>
+    </div>
+  </div>
+
+      </div>
+  </div>
+</div>
+
+
+
+
+  <div class="inner-level hooks-element-after">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-38">
+
+<div class="brief passed">
+  <span class="keyword indention">Hooks</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+    </div>
+
+    <div id="after-38" class="inner-level collapse collapsable-details ">
         <div class="hook">
           <div class="brief passed">
             <span class="keyword indention">After</span>

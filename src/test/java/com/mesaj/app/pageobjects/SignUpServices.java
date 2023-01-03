@@ -2,6 +2,7 @@ package com.mesaj.app.pageobjects;
 
 
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -28,10 +29,17 @@ public class SignUpServices {
 
     public void writeUsuario(String usuario) {
         this.wait.until(ExpectedConditions.visibilityOf(this.signUpPageObject.getUsuarioTextbox()));
-        this.signUpPageObject.getUsuarioTextbox().sendKeys(usuario);
+
+        String cajaTexto = "";
+
+        while (!cajaTexto.equals(usuario)){
+            this.signUpPageObject.getUsuarioTextbox().sendKeys(usuario);
+            cajaTexto = this.signUpPageObject.getUsuarioTextbox().getAttribute("value");
+        }
     }
 
     public void writeContrasena(String contrasena) {
+        this.wait.until(ExpectedConditions.visibilityOf(this.signUpPageObject.getContrasena()));
         this.signUpPageObject.getContrasena().sendKeys(contrasena);
     }
 

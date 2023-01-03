@@ -10,6 +10,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.concurrent.TimeUnit;
 
 public class ChatUsuarioManager {
 
@@ -73,21 +74,24 @@ public class ChatUsuarioManager {
         Thread.sleep(3000);
     }
 
-    private void AbrirTabDelManager() {
+    private void AbrirTabDelManager() throws InterruptedException {
 
         navigate.newTab();
         ventanaManager = navigate.getNewTab(ventanasTodas);
         ventanasTodas.add(ventanaManager);
+        Thread.sleep(3000);
+        navigate.changeTab(ventanaManager);
         //navigate.signUpPage();
     }
 
-    private void LoginManager(){
+    private void LoginManager() throws InterruptedException {
         navigate.signUpPage();
         try {
-            Thread.sleep(4000);
+            Thread.sleep(6000);
         } catch (InterruptedException e) {
             throw new RuntimeException(e);
         }
+
 
         signUp.withInfo(UserBuilder
                 .anUser()
@@ -102,7 +106,6 @@ public class ChatUsuarioManager {
 
     private void cambiarATabJugador()
     {
-
         navigate.changeTab(subVentanaJugador);
     }
 
@@ -111,6 +114,10 @@ public class ChatUsuarioManager {
         navigate.changeTab(subVentanaManager);
     }
 
+    private void cambiarATabLoginManager()
+    {
+        navigate.changeTab(ventanaManager);
+    }
     @Given("^Usuario se encuentra en sala de bingo como jugador$")
     public void JugadorIngresaAlChat() throws InterruptedException {
         JugadorIngresaALaSalaDeBingo();

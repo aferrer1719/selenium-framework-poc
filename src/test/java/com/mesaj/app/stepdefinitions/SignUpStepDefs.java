@@ -55,7 +55,7 @@ public class SignUpStepDefs {
     }*/
 
     @Given("^Miguel ingresa al backoffice con usuario y contraseña validos$")
-    public void miguelQuiereIngresarAlBackofficeConUsuarioYContraseñaValidos() {
+    public void miguelQuiereIngresarAlBackofficeConUsuarioYContraseñaValidos() throws InterruptedException {
 
         navigate.signUpPage();
         try {

@@ -13,10 +13,10 @@ public class UserSignUp {
     @Autowired
     private SignUpServices signUp;
 
-    public boolean withInfo(User user) {
-
+    public boolean withInfo(User user) throws InterruptedException {
         signUp.writeUsuario(user.getUsuario());
         signUp.writeContrasena(user.getContrasena());
+        Thread.sleep(2000);
         signUp.clickOnSubmit();
         signUp.pantallaPrincipal();
         return false;
