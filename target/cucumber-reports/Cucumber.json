@@ -1,0 +1,975 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 7,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 29290000000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "User logs into the back office with valid username and password",
+            "match": {
+              "location": "com.mesaj.app.stepdefinitions.backoffice.SignUpStepDefs.enterTheBackofficeWithValidUsernameAndPassword()"
+            },
+            "after": [
+              {
+                "result": {
+                  "duration": 9000000,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "com.mesaj.app.util.reporting.PhotographerHook.takeScreenshotAfterEveryStep(io.cucumber.java.Scenario)"
+                }
+              }
+            ],
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2023-01-07T03:25:39.520Z",
+        "before": [
+          {
+            "result": {
+              "duration": 8000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.mesaj.app.CucumberSpringContextConfiguration.setup()"
+            }
+          }
+        ],
+        "line": 10,
+        "name": "User successfully enters as a player into the bingo room list",
+        "description": "",
+        "id": "players-and-manager-successfully-enter-a-chat-room-and-interact-with-each-other;user-successfully-enters-as-a-player-into-the-bingo-room-list",
+        "after": [
+          {
+            "result": {
+              "duration": 3000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.mesaj.app.util.reporting.PhotographerHook.takeScreenshotAfterFailingScenario(io.cucumber.java.Scenario)"
+            }
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.mesaj.app.util.reporting.PhotographerHook.takeScreenshotAfterScenario(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 4302000000,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "User selects the required options to enter the room list",
+            "match": {
+              "location": "com.mesaj.app.stepdefinitions.chatmessage.EnterRoomListPlayerStepDefs.heSelectsTheRequiredOptions()"
+            },
+            "after": [
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "com.mesaj.app.util.reporting.PhotographerHook.takeScreenshotAfterEveryStep(io.cucumber.java.Scenario)"
+                }
+              }
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 3117000000,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "He can see the Rooms List screen",
+            "match": {
+              "location": "com.mesaj.app.stepdefinitions.chatmessage.EnterRoomListPlayerStepDefs.heCanAccessTheRoomListScreen()"
+            },
+            "after": [
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "com.mesaj.app.util.reporting.PhotographerHook.takeScreenshotAfterEveryStep(io.cucumber.java.Scenario)"
+                }
+              }
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 4999000000,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "Select the options to enter the type of bingo you want to play",
+            "match": {
+              "location": "com.mesaj.app.stepdefinitions.chatmessage.EnterRoomListPlayerStepDefs.selects_The_options_that_allow_him_to_enter_the_type_of_bingo_he_wants_to_play()"
+            },
+            "after": [
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "com.mesaj.app.util.reporting.PhotographerHook.takeScreenshotAfterEveryStep(io.cucumber.java.Scenario)"
+                }
+              }
+            ],
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@run"
+          }
+        ]
+      },
+      {
+        "line": 7,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 23502000000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "User logs into the back office with valid username and password",
+            "match": {
+              "location": "com.mesaj.app.stepdefinitions.backoffice.SignUpStepDefs.enterTheBackofficeWithValidUsernameAndPassword()"
+            },
+            "after": [
+              {
+                "result": {
+                  "duration": 2000000,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "com.mesaj.app.util.reporting.PhotographerHook.takeScreenshotAfterEveryStep(io.cucumber.java.Scenario)"
+                }
+              }
+            ],
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2023-01-07T03:26:22.316Z",
+        "before": [
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.mesaj.app.CucumberSpringContextConfiguration.setup()"
+            }
+          }
+        ],
+        "line": 15,
+        "name": "User successfully enters as a player into the chat room",
+        "description": "",
+        "id": "players-and-manager-successfully-enter-a-chat-room-and-interact-with-each-other;user-successfully-enters-as-a-player-into-the-chat-room",
+        "after": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.mesaj.app.util.reporting.PhotographerHook.takeScreenshotAfterFailingScenario(io.cucumber.java.Scenario)"
+            }
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.mesaj.app.util.reporting.PhotographerHook.takeScreenshotAfterScenario(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 11391000000,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "User is in the bingo room as a player",
+            "match": {
+              "location": "com.mesaj.app.stepdefinitions.chatmessage.EnterPlayerChatStepDefs.user_Is_In_The_Bingo_Room_As_player()"
+            },
+            "after": [
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "com.mesaj.app.util.reporting.PhotographerHook.takeScreenshotAfterEveryStep(io.cucumber.java.Scenario)"
+                }
+              }
+            ],
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 15536000000,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "He selects the option that allows him to enter a chat room",
+            "match": {
+              "location": "com.mesaj.app.stepdefinitions.chatmessage.EnterPlayerChatStepDefs.select_The_Option_That_Allows_You_To_Enter_A_Chat_Room()"
+            },
+            "after": [
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "com.mesaj.app.util.reporting.PhotographerHook.takeScreenshotAfterEveryStep(io.cucumber.java.Scenario)"
+                }
+              }
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 3517000000,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "He enters the chat room with players of his same language",
+            "match": {
+              "location": "com.mesaj.app.stepdefinitions.chatmessage.EnterPlayerChatStepDefs.enters_The_Chat_Room_With_Players_Of_His_Same_Language()"
+            },
+            "after": [
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "com.mesaj.app.util.reporting.PhotographerHook.takeScreenshotAfterEveryStep(io.cucumber.java.Scenario)"
+                }
+              }
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 3197000000,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "sends a message",
+            "match": {
+              "location": "com.mesaj.app.stepdefinitions.chatmessage.EnterPlayerChatStepDefs.sends_A_Message()"
+            },
+            "after": [
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "com.mesaj.app.util.reporting.PhotographerHook.takeScreenshotAfterEveryStep(io.cucumber.java.Scenario)"
+                }
+              }
+            ],
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@run"
+          }
+        ]
+      },
+      {
+        "line": 7,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 20698000000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "User logs into the back office with valid username and password",
+            "match": {
+              "location": "com.mesaj.app.stepdefinitions.backoffice.SignUpStepDefs.enterTheBackofficeWithValidUsernameAndPassword()"
+            },
+            "after": [
+              {
+                "result": {
+                  "duration": 2000000,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "com.mesaj.app.util.reporting.PhotographerHook.takeScreenshotAfterEveryStep(io.cucumber.java.Scenario)"
+                }
+              }
+            ],
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2023-01-07T03:27:20.637Z",
+        "before": [
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.mesaj.app.CucumberSpringContextConfiguration.setup()"
+            }
+          }
+        ],
+        "line": 21,
+        "name": "User successfully logs in as a manager to the bingo room list",
+        "description": "",
+        "id": "players-and-manager-successfully-enter-a-chat-room-and-interact-with-each-other;user-successfully-logs-in-as-a-manager-to-the-bingo-room-list",
+        "after": [
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.mesaj.app.util.reporting.PhotographerHook.takeScreenshotAfterFailingScenario(io.cucumber.java.Scenario)"
+            }
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.mesaj.app.util.reporting.PhotographerHook.takeScreenshotAfterScenario(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 3325000000,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "He selects the options to enter the room list",
+            "match": {
+              "location": "com.mesaj.app.stepdefinitions.chatmessage.EnterRoomListManagerStepDefs.selectsTheOptionsToEnterTheRoomList()"
+            },
+            "after": [
+              {
+                "result": {
+                  "duration": 1000000,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "com.mesaj.app.util.reporting.PhotographerHook.takeScreenshotAfterEveryStep(io.cucumber.java.Scenario)"
+                }
+              }
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 3100000000,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "He can view the RoomsList screen",
+            "match": {
+              "location": "com.mesaj.app.stepdefinitions.chatmessage.EnterRoomListManagerStepDefs.HeCanViewTheRoomsListScreen()"
+            },
+            "after": [
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "com.mesaj.app.util.reporting.PhotographerHook.takeScreenshotAfterEveryStep(io.cucumber.java.Scenario)"
+                }
+              }
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 5375000000,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "Select options to enter the bingo game you want to play",
+            "match": {
+              "location": "com.mesaj.app.stepdefinitions.chatmessage.EnterRoomListManagerStepDefs.Select_options_to_enter_the_bingo_game_you_want_to_play()"
+            },
+            "after": [
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "com.mesaj.app.util.reporting.PhotographerHook.takeScreenshotAfterEveryStep(io.cucumber.java.Scenario)"
+                }
+              }
+            ],
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@run"
+          }
+        ]
+      },
+      {
+        "line": 7,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 19665000000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "User logs into the back office with valid username and password",
+            "match": {
+              "location": "com.mesaj.app.stepdefinitions.backoffice.SignUpStepDefs.enterTheBackofficeWithValidUsernameAndPassword()"
+            },
+            "after": [
+              {
+                "result": {
+                  "duration": 1000000,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "com.mesaj.app.util.reporting.PhotographerHook.takeScreenshotAfterEveryStep(io.cucumber.java.Scenario)"
+                }
+              }
+            ],
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2023-01-07T03:27:54.079Z",
+        "before": [
+          {
+            "result": {
+              "duration": 2000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.mesaj.app.CucumberSpringContextConfiguration.setup()"
+            }
+          }
+        ],
+        "line": 27,
+        "name": "User successfully logs in as a manager to the chat room",
+        "description": "",
+        "id": "players-and-manager-successfully-enter-a-chat-room-and-interact-with-each-other;user-successfully-logs-in-as-a-manager-to-the-chat-room",
+        "after": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.mesaj.app.util.reporting.PhotographerHook.takeScreenshotAfterFailingScenario(io.cucumber.java.Scenario)"
+            }
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.mesaj.app.util.reporting.PhotographerHook.takeScreenshotAfterScenario(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 11522000000,
+              "status": "passed"
+            },
+            "line": 28,
+            "name": "User is in the bingo room as a manager",
+            "match": {
+              "location": "com.mesaj.app.stepdefinitions.chatmessage.EnterManagerChatStepDefs.user_Enter_Bingo_Room_As_a_Manager()"
+            },
+            "after": [
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "com.mesaj.app.util.reporting.PhotographerHook.takeScreenshotAfterEveryStep(io.cucumber.java.Scenario)"
+                }
+              }
+            ],
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 23885000000,
+              "status": "passed"
+            },
+            "line": 29,
+            "name": "He selects the option to enter a chat room",
+            "match": {
+              "location": "com.mesaj.app.stepdefinitions.chatmessage.EnterManagerChatStepDefs.selectTheOptionToEnterAChatRoom()"
+            },
+            "after": [
+              {
+                "result": {
+                  "duration": 1000000,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "com.mesaj.app.util.reporting.PhotographerHook.takeScreenshotAfterEveryStep(io.cucumber.java.Scenario)"
+                }
+              }
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 3842000000,
+              "status": "passed"
+            },
+            "line": 30,
+            "name": "He enters the chat room and can see players who speak the same language as him",
+            "match": {
+              "location": "com.mesaj.app.stepdefinitions.chatmessage.EnterManagerChatStepDefs.enter_The_Chat_Room_With_Players_Who_Speak_The_Same_Language_As_You()"
+            },
+            "after": [
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "com.mesaj.app.util.reporting.PhotographerHook.takeScreenshotAfterEveryStep(io.cucumber.java.Scenario)"
+                }
+              }
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 5536000000,
+              "status": "passed"
+            },
+            "line": 31,
+            "name": "He sends a message to the players",
+            "match": {
+              "location": "com.mesaj.app.stepdefinitions.chatmessage.EnterManagerChatStepDefs.sendsMessageToThePlayers()"
+            },
+            "after": [
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "com.mesaj.app.util.reporting.PhotographerHook.takeScreenshotAfterEveryStep(io.cucumber.java.Scenario)"
+                }
+              }
+            ],
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@run"
+          }
+        ]
+      },
+      {
+        "line": 7,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 17481000000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "User logs into the back office with valid username and password",
+            "match": {
+              "location": "com.mesaj.app.stepdefinitions.backoffice.SignUpStepDefs.enterTheBackofficeWithValidUsernameAndPassword()"
+            },
+            "after": [
+              {
+                "result": {
+                  "duration": 3000000,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "com.mesaj.app.util.reporting.PhotographerHook.takeScreenshotAfterEveryStep(io.cucumber.java.Scenario)"
+                }
+              }
+            ],
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2023-01-07T03:28:59.597Z",
+        "before": [
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.mesaj.app.CucumberSpringContextConfiguration.setup()"
+            }
+          }
+        ],
+        "line": 34,
+        "name": "Player and Manager enter the chat room and send messages.",
+        "description": "",
+        "id": "players-and-manager-successfully-enter-a-chat-room-and-interact-with-each-other;player-and-manager-enter-the-chat-room-and-send-messages.",
+        "after": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.mesaj.app.util.reporting.PhotographerHook.takeScreenshotAfterFailingScenario(io.cucumber.java.Scenario)"
+            }
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.mesaj.app.util.reporting.PhotographerHook.takeScreenshotAfterScenario(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 33855000000,
+              "status": "passed"
+            },
+            "line": 35,
+            "name": "Player enters the chat room",
+            "match": {
+              "location": "com.mesaj.app.stepdefinitions.chatmessage.ChatPlayerManagerStepDefs.playerEnterTheChatRoom()"
+            },
+            "after": [
+              {
+                "result": {
+                  "duration": 1000000,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "com.mesaj.app.util.reporting.PhotographerHook.takeScreenshotAfterEveryStep(io.cucumber.java.Scenario)"
+                }
+              }
+            ],
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 3116000000,
+              "status": "passed"
+            },
+            "line": 36,
+            "name": "sends a message to the other players",
+            "match": {
+              "location": "com.mesaj.app.stepdefinitions.chatmessage.ChatPlayerManagerStepDefs.playerEntersTheChat()"
+            },
+            "after": [
+              {
+                "result": {
+                  "duration": 1000000,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "com.mesaj.app.util.reporting.PhotographerHook.takeScreenshotAfterEveryStep(io.cucumber.java.Scenario)"
+                }
+              }
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 58743000000,
+              "status": "passed"
+            },
+            "line": 37,
+            "name": "Manager is in the chat room",
+            "match": {
+              "location": "com.mesaj.app.stepdefinitions.chatmessage.ChatPlayerManagerStepDefs.ManagerEnterTheChat()"
+            },
+            "after": [
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "com.mesaj.app.util.reporting.PhotographerHook.takeScreenshotAfterEveryStep(io.cucumber.java.Scenario)"
+                }
+              }
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 10403000000,
+              "status": "passed"
+            },
+            "line": 38,
+            "name": "He can see the messages sent by the player",
+            "match": {
+              "location": "com.mesaj.app.stepdefinitions.chatmessage.ChatPlayerManagerStepDefs.checkSentMessages()"
+            },
+            "after": [
+              {
+                "result": {
+                  "duration": 1000000,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "com.mesaj.app.util.reporting.PhotographerHook.takeScreenshotAfterEveryStep(io.cucumber.java.Scenario)"
+                }
+              }
+            ],
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@run"
+          }
+        ]
+      }
+    ],
+    "name": "Players and Manager successfully enter a chat room and interact with each other",
+    "description": "  As a player and manager,\n  we want to enter a chat room\n  to start a game and exchange messages with other players.",
+    "id": "players-and-manager-successfully-enter-a-chat-room-and-interact-with-each-other",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/ChatMessageDev.feature",
+    "tags": [
+      {
+        "name": "@run",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  },
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 8,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 18051000000,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "User logs into the back office with valid username and password",
+            "match": {
+              "location": "com.mesaj.app.stepdefinitions.backoffice.SignUpStepDefs.enterTheBackofficeWithValidUsernameAndPassword()"
+            },
+            "after": [
+              {
+                "result": {
+                  "duration": 1000000,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "com.mesaj.app.util.reporting.PhotographerHook.takeScreenshotAfterEveryStep(io.cucumber.java.Scenario)"
+                }
+              }
+            ],
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2023-01-07T03:31:04.423Z",
+        "before": [
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.mesaj.app.CucumberSpringContextConfiguration.setup()"
+            }
+          }
+        ],
+        "line": 11,
+        "name": "Players sends forbidden Words",
+        "description": "",
+        "id": "players-successfully-enter-a-chat-room-and-sends-forbidden-words;players-sends-forbidden-words",
+        "after": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.mesaj.app.util.reporting.PhotographerHook.takeScreenshotAfterFailingScenario(io.cucumber.java.Scenario)"
+            }
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.mesaj.app.util.reporting.PhotographerHook.takeScreenshotAfterScenario(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 33336000000,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "Players join the chat in Spanish",
+            "match": {
+              "location": "com.mesaj.app.stepdefinitions.forbiddenwords.SendForbiddenWordsStepDefs.playerEnterTheChatRoom()"
+            },
+            "after": [
+              {
+                "result": {
+                  "duration": 1000000,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "com.mesaj.app.util.reporting.PhotographerHook.takeScreenshotAfterEveryStep(io.cucumber.java.Scenario)"
+                }
+              }
+            ],
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 58529000000,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "One of the players writes Forbidden words from the Spanish kit",
+            "match": {
+              "location": "com.mesaj.app.stepdefinitions.forbiddenwords.SendForbiddenWordsStepDefs.playersSendForbiddenWords()"
+            },
+            "after": [
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "com.mesaj.app.util.reporting.PhotographerHook.takeScreenshotAfterEveryStep(io.cucumber.java.Scenario)"
+                }
+              }
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 10295000000,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "The Forbidden words only appear to the player who sends them but not to the other player of the same language",
+            "match": {
+              "location": "com.mesaj.app.stepdefinitions.forbiddenwords.SendForbiddenWordsStepDefs.theForbiddenWordsForPlayer()"
+            },
+            "after": [
+              {
+                "result": {
+                  "duration": 1000000,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "com.mesaj.app.util.reporting.PhotographerHook.takeScreenshotAfterEveryStep(io.cucumber.java.Scenario)"
+                }
+              }
+            ],
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@run"
+          }
+        ]
+      }
+    ],
+    "name": "Players successfully enter a chat room and sends forbidden Words",
+    "description": "  As a player\n  I want to enter the chat\n  to send prohibited words in English and Spanish\n  and for the other player not to be able to see them.",
+    "id": "players-successfully-enter-a-chat-room-and-sends-forbidden-words",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/ForbiddenWordsDev.feature",
+    "tags": [
+      {
+        "name": "@run",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  }
+]

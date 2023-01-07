@@ -14,4 +14,6 @@ import lombok.NoArgsConstructor;
 public class Msg {
     private String mensaje = "Hola soy el jugador 1";
     private String mensajeChatManager = "Hola soy el Chat Manager bienvenidos a la sala de chat";
+    private String mensajeJugador2 = "Hola Jugadores espero tengan mucha suerte(a-beaming)";
+    private String mensajeJugador1 = "jodete capullo vamos a jugar";
 }
